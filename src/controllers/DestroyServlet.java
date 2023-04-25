@@ -36,7 +36,7 @@ public class DestroyServlet extends HttpServlet {
             EntityManager em = DBUtil.createEntityManager();
 
 
-            //セッションスコープ方メッセージのIDを取得して
+            //セッションスコープからメッセージのIDを取得して
             //該当のIDのメッセージ１件のみをデータベースから取得
 
 
@@ -54,7 +54,7 @@ public class DestroyServlet extends HttpServlet {
 
 
             //indexページへリダイレクト
-            response.sendRedirect(request.getContextPath()+"/index");
+            response.sendRedirect(request.getContextPath() + "/index");
 
         }
     }
